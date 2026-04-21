@@ -3,7 +3,7 @@ import React from 'react';
 
 const Link = ({route}) => {
     return (
-        <li>
+        <li className='mb-2 md:mr-5'>
             <a href={route.path}>{route.name}</a>
         </li>
     );
