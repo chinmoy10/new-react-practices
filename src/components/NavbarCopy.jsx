@@ -17,17 +17,17 @@ const NavbarCopy = () => {
 
     return (
         <nav className='text-black bg-yellow-200 p-6'>
-            <div className=' md:hidden' onClick={() => setOpen(!open)}>
+            <div className='md:hidden' onClick={() => setOpen(!open)}>
                 {
                     open === true? <AiOutlineClose className='text-2xl' /> : <HiMenuAlt1 className='text-2xl' />
                 }
                 
             </div>
             
-            <ul className={`md:flex duration-1000 absolute
+            <ul className={`md:flex duration-1000 absolute md:static
                 ${
                     open? "left-10" : "-left-60"
-                } bg-yellow-100 px-8 py-3 shadow-lg mt-2`}>
+                } bg-yellow-100 px-8 py-3 shadow-lg md:shadow-none mt-2`}>
                 {routes.map(route => <Link key={route.id} route={route}></Link>)}
             </ul>
         </nav>
