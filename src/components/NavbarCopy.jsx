@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from './Link';
 import { HiMenuAlt1 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Spin as Hamburger } from 'hamburger-react'
 
 const NavbarCopy = () => {
 
@@ -21,7 +22,7 @@ const NavbarCopy = () => {
                 {
                     open === true? <AiOutlineClose className='text-2xl' /> : <HiMenuAlt1 className='text-2xl' />
                 }
-                
+                <Hamburger toggled={open} toggle={setOpen} />
             </div>
             
             <ul className={`md:flex duration-1000 absolute md:static

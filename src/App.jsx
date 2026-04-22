@@ -1,3 +1,4 @@
+import LineCharts from "./components/LineCharts"
 import NavbarCopy from "./components/NavbarCopy"
 import PriceOptions from "./components/PriceOptions"
 
@@ -9,6 +10,7 @@ function App() {
       <NavbarCopy></NavbarCopy>
       <h1 className='text-teal-500 font-extrabold text-3xl'>Get started our mission</h1>
       <PriceOptions></PriceOptions>
+      <LineCharts></LineCharts>
     </>
   )
 }
